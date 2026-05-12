@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JANNA'S PORTFOLIO</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'League Gothic', sans-serif;
+            background-color: #f891be;
+            color: black;
+            margin: 0;
+        }
+
+        header {
+            background-color: #fcccd6;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: black;
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            color: black;
+            margin: 5px 0 0;
+        }
+
+        nav {
+            background-color: #fcccd6;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav ul li a:hover {
+            background-color: #f670b5;
+            color: #181818;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        aside {
+            width: 25%;
+            background-color: #fcccd6;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        aside img {
+            width: 100%;
+            border-radius: 50px;
+        }
+
+        aside h2 {
+            color: black;
+            text-align: center;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside ul li {
+            margin-bottom: 8px;
+        }
+
+        aside ul li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        aside ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            width: 40%;
+            background-color: #fcccd6;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        section h2 {
+            color: black;
+        }
+
+        section p {
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+        section .tech-group {
+            margin-bottom: 15px;
+        }
+
+        section .tech-group h3 {
+            color: black;
+            margin-bottom: 8px;
+        }
+
+        section .tech-group img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        article {
+            width: 25%;
+            background-color: #fcccd6;
+            padding: 20px;
+            border-radius: 10px;
+            overflow: scroll;
+            height: 530px;
+        }
+
+        article h2 {
+            color: black;
+        }
+
+        article p {
+            line-height: 1.7;
+        }
+
+        article a {
+            display: block;
+            background-color: #dfa383;
+            color: #181818;
+            text-decoration: none;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        article a:hover {
+            background-color: #bda695;
+            color: black;
+        }
+
+        fieldset {
+            margin-bottom: 10px;
+        }
+
+        fieldset summary {
+            background-color: #fcccd6;
+            color: #181818;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            letter-spacing: 2px;
+            font-family: 'League Gothic', sans-serif;
+            font-size: 1em;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        fieldset summary:hover {
+            background-color: #fcccd6;
+            color: black;
+        }
+
+        .task-links {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-top: 4px;
+        }
+
+        .task-links a {
+            background-color: #f670b5;
+            color: black;
+            padding: 9px 12px;
+            border-radius: 5px;
+            font-size: 0.85em;
+            letter-spacing: 1px;
+            margin-bottom: 0;
+        }
+
+        .task-links a:hover {
+            background-color: #fcccd6;
+            color: #181818;
+        }
+
+        footer {
+            background-color: #fcccd6;
+            text-align: center;
+            padding: 20px;
+            clear: both;
+            color: black;
+        }
+
+        footer a {
+            color: black;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 800px) {
+            aside, section, article {
+                width: 100%;
+                text-align: center;
+            }
+
+            article {
+                height: 350px;
+                overflow: scroll;
+            }
+
+            section p {
+                text-align: left;
+            }
+
+            nav ul {
+                justify-content: center;
+            }
+
+            nav ul li a {
+                padding: 8px 12px;
+                font-size: 0.9em;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            aside img {
+                width: 60%;
+                margin: 0 auto;
+                display: block;
+            }
+
+            .task-links a {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <header>
+        <h1>JANNA'S PORTFOLIO</h1>
+        <p><em>Welcome to my WS101 Portfolio</em></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tech">Languages</a></li>
+            <li><a href="#projects">My Projects</a></li>
+            <li><a href="#contact">More Info</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <aside>
+            <img src="images/janna.svg" alt="Janna's profile picture">
+            <h2>Janna Mae C. Miranda</h2>
+            <p>Connect with me:</p>
+            <ul>
+                <li><a href="https://www.facebook.com/share/18BZXkRX77/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/mrnd_jnnm?igsh=MWZnMjFkcjRsaGVrOA==" target="_blank">Instagram</a></li>
+                <li><a href="mailto:jannamaemiranda24@gmail.com">Gmail</a></li>
+            </ul>
+        </aside>
+
+        <section>
+
+            <h2 id="about">About Me</h2>
+            <p>My name is Janna Mae, I can say that I'm a driven student who's all about getting things done.
+                I'm cool with everyone, respectful, and love teaming up whether it's for school or just vibing.
+                I'm always learning and developing, and this area shows my growth for technology.</p>
+
+            <h2 id="tech">Languages I Used Before</h2>
+
+            <div class="tech-group">
+                <h3>Front-End</h3>
+                <img src="images/html.jfif" alt="HTML5">
+            </div>
+
+            <div class="tech-group">
+                <h3>Back-End</h3>
+                <img src="images/python.jfif" alt="Python">
+                <img src="images/java.jfif" alt="Java">
+            </div>
+
+        </section>
+
+        <article>
+
+            <h2 id="projects">My Projects</h2>
+            <p>Midterm Tasks</p>
+
+            <fieldset>
+                <summary>Midterm Lab Task 1</summary>
+                <div class="task-links">
+                    <a href="resume1.html" target="_blank"> View Project</a>
+                    <a href="https://hastebin.com/share/ihumifeyaz.xml" target="_blank"> View Source Code</a>
+                    <a href="images/rwocss.jfif" target="_blank">View Sample Output</a>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <summary>Midterm Lab Task 2</summary>
+                <div class="task-links">
+                    <a href="lists.html" target="_blank"> View Project</a>
+                    <a href="https://hastebin.com/share/boqupafike.php-template" target="_blank"> View Source Code</a>
+                    <a href="images/Lat.jfif" target="_blank"> View Sample Output</a>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <summary>Midterm Lab Task 3</summary>
+                <div class="task-links">
+                    <a href="form.html" target="_blank"> View Project</a>
+                    <a href="https://hastebin.com/share/erusedibex.xml" target="_blank"> View Source Code</a>
+                    <a href="images/form.jfif" target="_blank"> View Sample Output</a>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <summary>Midterm Lab Task 4</summary>
+                <div class="task-links">
+                    <a href="miss.html" target="_blank"> View Project</a>
+                    <a href="https://hastebin.com/share/samoveruyo.xml" target="_blank"> View Source Code</a>
+                    <a href="images/miss.jfif" target="_blank"> View Sample Output</a>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <summary>Midterm Lab Task 5</summary>
+                <div class="task-links">
+                    <a href="resume.html" target="_blank"> View Project</a>
+                    <a href="https://hastebin.com/share/ujegoforeb.xml" target="_blank"> View Source Code</a>
+                    <a href="images/rwocss.jfif" target="_blank">View Sample Output</a>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <summary>Midterm Lab Task 6</summary>
+                <div class="task-links">
+                    <a href="map.html" target="_blank"> View Project</a>
+                    <a href="https://hastebin.com/share/uqinoqenox.xml" target="_blank"> View Source Code</a>
+                    <a href="images/map.jfif" target="_blank"> View Sample Output</a>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <summary>Final task 1</summary>
+                <div class="task-links">
+                    <a href="flexfinal.html" target="_blank"> View Project</a>
+                    <a href="https://hastebin.com/share/lehiqiyudo.xml" target="_blank"> View Source Code</a>
+                    <a href="images/flexfinal.jfif" target="_blank"> View Sample Output</a>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <summary>Final task 2</summary>
+                <div class="task-links">
+                    <a href="task2.html" target="_blank"> View Project</a>
+                    <a href="https://hastebin.ianhon.com/ac63" target="_blank"> View Source Code</a>
+                    <a href="images/task2.jfif" target="_blank"> View Sample Output</a>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <summary>Final task 3</summary>
+                <div class="task-links">
+                    <a href="task3.html" target="_blank"> View Project</a>
+                    <a href="https://hastebin.ianhon.com/1cb1" target="_blank"> View Source Code</a>
+                    <a href="images/task3.1.jfif" target="_blank"> View Sample Output</a>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <summary>Final Project</summary>
+                <div class="task-links">
+                    <a href="site/index.html" target="_blank"> View Project</a>
+                    <a href="https://hastebin.ianhon.com/e8d2" target="_blank"> View Source Code</a>
+                    <a href="site/images/proj.jfif" target="_blank"> View Sample Output</a>
+                </div>
+            </fieldset>
+
+        </article><br>
+        
+            <h2 id="contact">Fun Fact About Me</h2>
+            
+            <h6>I can do all of my pending activities last day before deadline. I love watching movies but sometimes I cant finish watching it</h6>
+
+    </main>
+
+    <footer>
+        <p>Made with 🎀 by Janna Mae C. Miranda</p>
+        <a href="#top">Back to Top</a>
+    </footer>
+
+</body>
+
+</html>
